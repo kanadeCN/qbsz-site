@@ -1,1 +1,23 @@
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
 
+<div id="gitalk-container"></div>
+    <script type="text/javascript">
+    var gitalk = new Gitalk({
+
+    // gitalk的主要参数
+        clientID: `Github Application clientID`,
+        clientSecret: `Github Application clientSecret`,
+        repo: `存储你评论 issue 的 Github 仓库名`,
+        owner: 'Github 用户名',
+        admin: ['Github 用户名'],
+        id: '页面的唯一标识，gitalk会根据这个标识自动创建的issue的标签',
+    
+    });
+    gitalk.render('gitalk-container');
+</script>
+
+作者：BYQiu
+链接：https://www.jianshu.com/p/78c64d07124d
+來源：简书
+简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
