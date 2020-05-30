@@ -124,6 +124,16 @@ body {
     <center><p style="color:grey">Copyright©2020 qbsz</p></center>
   <center><a href="https://qbsz.github.io/info" style="color:grey;text-decoration:none;">>>页面设置</a></center>
     </div>
+       <script>
 
+        if (localStorage.pagecount){
+               localStorage.pagecount=Number(localStorage.pagecount)+1;
+           }
+           else{
+              localStorage.pagecount=1;
+           }
+           document.getElementById("result1").innerHTML=localStorage.pagecount;
+
+        </script>
 </body>
 </html>
