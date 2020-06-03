@@ -4,3 +4,5 @@
 A webpage for Qibao Experimental Middle School.
 </br>
 Please visit https://qbsz.github.io to visit our webpage.
+# LICENCE
+MIT [[Learn more]](https://github.com/qbsz/qbsz.github.io/blob/master/LICENSE)
