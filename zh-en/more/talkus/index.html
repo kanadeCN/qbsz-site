@@ -120,7 +120,25 @@ body {
       
 <center><strong>在线留言区(周三20:30～21:30)</strong></center>
 <center>如果进入聊天区的时候显示<strong>Error:Network error</strong>，请过10分钟后再试</center>
+{% if site.gitalk.enable %}
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
 
+<div id="gitalk-container"></div>
+    <script type="text/javascript">
+    var gitalk = new Gitalk({
+
+        clientID: `0e13b2d0a8d5cfb1905b`,
+        clientSecret: `897b70e95e4809a24617faf34f45da887e98aca4`,
+        repo: `qbsz.github.io`,
+        owner: 'qbsz',
+        admin: ['qbsz'],
+        id: '留言1服',
+    
+    });
+    gitalk.render('gitalk-container');
+</script>
+{% endif %}
 
   </div>
 
